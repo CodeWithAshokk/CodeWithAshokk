@@ -2357,13 +2357,13 @@ textarea.form-control {
    -------------------------------------------------------------------------- */
 
 /* Prevent CSS Grid blowout & horizontal overflow across all screen sizes */
-.hero-grid > *,
-.about-hero-grid > *,
-.community-hero-grid > *,
-.contact-grid > *,
-.projects-grid > *,
-.skills-grid > *,
-.footer-grid > * {
+.hero-grid>*,
+.about-hero-grid>*,
+.community-hero-grid>*,
+.contact-grid>*,
+.projects-grid>*,
+.skills-grid>*,
+.footer-grid>* {
   min-width: 0;
 }
 
