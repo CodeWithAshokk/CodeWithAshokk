@@ -120,6 +120,13 @@
     }
   });
 
+  // Close drawer automatically if resized to desktop width
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 992 && hamburgerBtn && hamburgerBtn.classList.contains('active')) {
+      closeMobileNav();
+    }
+  });
+
   // --------------------------------------------------------------------------
   // 3. STICKY NAVBAR SCROLL EFFECT
   // --------------------------------------------------------------------------

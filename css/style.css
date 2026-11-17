@@ -118,6 +118,9 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -126,7 +129,9 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   overflow-x: hidden;
+  overflow-x: clip;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   transition: background-color var(--transition-normal), color var(--transition-normal);
@@ -2222,4 +2227,494 @@ textarea.form-control {
 :focus-visible {
   outline: 2px solid var(--accent-cyan);
   outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   17. COMPREHENSIVE MOBILE & TABLET RESPONSIVENESS
+   -------------------------------------------------------------------------- */
+
+/* Prevent CSS Grid blowout & horizontal overflow across all screen sizes */
+.hero-grid > *,
+.about-hero-grid > *,
+.community-hero-grid > *,
+.contact-grid > *,
+.projects-grid > *,
+.skills-grid > *,
+.footer-grid > * {
+  min-width: 0;
+}
+
+.social-links-row {
+  flex-wrap: wrap;
+}
+
+.category-icon,
+.faq-chevron,
+.skill-icon-wrap {
+  flex-shrink: 0;
+}
+
+.faq-question {
+  gap: 0.85rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 600px;
+}
+
+.profile-detail-row {
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.profile-detail-val {
+  text-align: right;
+  word-break: break-word;
+}
+
+.method-value,
+.footer-links li {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.code-snippet-box {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-drawer {
+  width: min(85vw, 300px);
+  right: -100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Tablet & Below (<= 991px) */
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding: 2.75rem 0 3.75rem;
+  }
+
+  .hero-grid {
+    gap: 2.75rem;
+  }
+
+  .hero-card-frame {
+    max-width: 540px;
+  }
+
+  .about-hero-grid,
+  .community-hero-grid {
+    gap: 2.25rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-grid {
+    gap: 2.25rem;
+  }
+}
+
+/* Mobile Landscape & Large Phones (<= 767px) */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 66px;
+  }
+
+  .navbar.scrolled {
+    height: 62px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ambient-glow {
+    width: 280px;
+    height: 280px;
+    opacity: 0.45;
+  }
+
+  .section {
+    padding: 3.25rem 0;
+  }
+
+  .section-sm {
+    padding: 2rem 0;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 2.25rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.65rem, 6.2vw, 2.2rem) !important;
+    line-height: 1.22;
+  }
+
+  .section-desc {
+    font-size: 0.96rem;
+  }
+
+  p {
+    font-size: 0.96rem;
+  }
+
+  .section-tag {
+    font-size: 0.74rem;
+    padding: 0.3rem 0.8rem;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  /* Hero Section Mobile Tuning */
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-badge {
+    margin-bottom: 0;
+    font-size: 0.78rem;
+    padding: 0.35rem 0.75rem;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 7.5vw, 2.5rem);
+    line-height: 1.18;
+    margin-bottom: 1rem;
+  }
+
+  .typewriter-wrap {
+    font-size: 0.96rem;
+    flex-wrap: wrap;
+    line-height: 1.4;
+    min-height: 1.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-tech-stack {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+  }
+
+  .tech-pill {
+    font-size: 0.74rem;
+    padding: 0.28rem 0.65rem;
+  }
+
+  /* Buttons & Inputs (Prevent iOS auto-zoom & overflow) */
+  .btn {
+    white-space: normal;
+    text-align: center;
+    min-height: 44px;
+  }
+
+  .btn-lg {
+    padding: 0.8rem 1.35rem;
+    font-size: 0.95rem;
+  }
+
+  .form-control,
+  .search-input {
+    font-size: 1rem;
+  }
+
+  .search-box {
+    max-width: 100%;
+  }
+
+  .projects-filter-bar {
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .filter-categories {
+    gap: 0.45rem;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
+  .projects-grid {
+    gap: 1.35rem;
+  }
+
+  /* Skills, Community & Contact Mobile Spacing */
+  .skills-category-section {
+    margin-bottom: 2.75rem;
+  }
+
+  .category-header {
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .roadmap-box,
+  .contact-card-box,
+  .contact-form-card,
+  .channel-card,
+  .about-card-profile {
+    padding: 1.4rem;
+  }
+
+  .about-cta-box {
+    padding: 2rem 1.25rem !important;
+    margin-top: 2.5rem !important;
+  }
+
+  /* Footer Mobile Tuning */
+  .footer {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+}
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 1.05rem;
+    gap: 0.5rem;
+  }
+
+  .brand-logo-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .theme-toggle-btn,
+  .hamburger-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .mobile-nav-drawer {
+    padding: 4.75rem 1.25rem 1.5rem;
+  }
+
+  /* Full-width stacked CTA buttons on compact phones */
+  .btn-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+
+  /* Hero Terminal Card Compact Mobile Mode */
+  .card-header-bar {
+    padding: 0.6rem 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .window-title {
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .terminal-tabs-bar {
+    padding: 0.4rem 0.65rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .terminal-tab {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .hero-dev-header {
+    padding: 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .hero-dev-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  .hero-dev-info h3 {
+    font-size: 0.96rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-dev-info p {
+    font-size: 0.75rem;
+  }
+
+  .code-snippet-box {
+    padding: 0.9rem 0.85rem;
+    font-size: 0.73rem;
+    line-height: 1.55;
+    word-break: break-word;
+  }
+
+  /* Metrics Strip 2x2 Compact */
+  .metrics-strip {
+    padding: 1.75rem 0;
+  }
+
+  .metrics-grid {
+    gap: 1.25rem 0.75rem;
+  }
+
+  .metric-item {
+    padding: 0.2rem 0.35rem;
+  }
+
+  .metric-number {
+    font-size: 1.9rem;
+  }
+
+  .metric-label {
+    font-size: 0.78rem;
+  }
+
+  /* Project Cards Compact */
+  .project-thumb {
+    height: 180px;
+  }
+
+  .project-body {
+    padding: 1.15rem;
+  }
+
+  .project-title {
+    font-size: 1.12rem;
+  }
+
+  .project-actions {
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .project-actions .btn {
+    min-width: 120px;
+  }
+
+  /* About Page Compact */
+  .profile-avatar-large {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 1rem;
+  }
+
+  .profile-name {
+    font-size: 1.4rem;
+  }
+
+  .profile-detail-row {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .profile-detail-val {
+    text-align: left;
+  }
+
+  .timeline {
+    padding-left: 1.45rem;
+  }
+
+  .timeline::before {
+    left: 0.35rem;
+  }
+
+  .timeline-dot {
+    left: -1.45rem;
+    width: 14px;
+    height: 14px;
+    border-width: 2.5px;
+  }
+
+  .timeline-content {
+    padding: 1.1rem;
+  }
+
+  .timeline-title {
+    font-size: 1.05rem;
+  }
+
+  .hobbies-grid,
+  .roadmap-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* FAQ & Contact Compact */
+  .faq-question {
+    padding: 1rem 1.05rem;
+    font-size: 0.94rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.05rem;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 1.05rem 1rem;
+  }
+
+  .method-value {
+    font-size: 0.9rem;
+  }
+
+  .back-to-top {
+    bottom: 1.1rem;
+    right: 1.1rem;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Extra-Small Phones (<= 380px) */
+@media (max-width: 380px) {
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.72rem;
+  }
 }
