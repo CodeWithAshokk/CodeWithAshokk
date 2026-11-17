@@ -2827,7 +2827,7 @@ textarea.form-control {
   }
 }
 
-/* Extra-Small Phones (<= 380px) */
+/* Extra-Small & FHD+ 20:9 Phones (<= 380px CSS / 1080x2400 @ 3x DPR) */
 @media (max-width: 380px) {
   .project-actions {
     flex-direction: column;
@@ -2839,6 +2839,17 @@ textarea.form-control {
 
   .hero-title {
     font-size: 1.72rem;
+  }
+
+  .hero-badge {
+    font-size: 0.73rem;
+    padding: 0.32rem 0.68rem;
+  }
+
+  .code-snippet-box {
+    padding: 0.85rem 0.72rem;
+    font-size: 0.71rem;
+    line-height: 1.55;
   }
 }
 
