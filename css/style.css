@@ -273,8 +273,8 @@ pre {
 .text-gradient {
   background: var(--gradient-brand);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-cyan {
@@ -1158,6 +1158,7 @@ pre {
   margin-bottom: 0.45rem;
   background: var(--gradient-brand);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--font-mono);
 }
@@ -3208,5 +3209,89 @@ footer {
 
   .spotlight-body {
     padding: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   20. MOBILE BOTTOM NAVIGATION TAB BAR (1-Tap Multi-Page Access)
+   -------------------------------------------------------------------------- */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 950;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.35);
+  padding: 0.35rem 0.25rem calc(0.35rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 992px) {
+  .mobile-bottom-nav {
+    display: none;
+  }
+}
+
+.bottom-nav-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.35rem 0.2rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  min-height: 48px;
+}
+
+.bottom-nav-item svg {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition-fast);
+}
+
+.bottom-nav-item:hover,
+.bottom-nav-item.active {
+  color: var(--accent-cyan);
+}
+
+.bottom-nav-item.active {
+  background: rgba(0, 229, 255, 0.08);
+}
+
+.bottom-nav-item.active::before {
+  content: '';
+  position: absolute;
+  top: -0.35rem;
+  left: 25%;
+  right: 25%;
+  height: 2.5px;
+  background: var(--accent-cyan);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.bottom-nav-item.active svg {
+  transform: translateY(-1px);
+}
+
+/* Reserve space so bottom bar never overlaps footer or back-to-top button */
+@media (max-width: 991px) {
+  .footer {
+    padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+  }
+
+  .back-to-top {
+    bottom: calc(5rem + env(safe-area-inset-bottom));
   }
 }

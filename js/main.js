@@ -147,7 +147,7 @@
   // --------------------------------------------------------------------------
   function highlightActiveNavLink() {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .bottom-nav-item');
 
     navLinks.forEach(link => {
       const href = link.getAttribute('href');
