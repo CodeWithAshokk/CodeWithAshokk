@@ -106,7 +106,9 @@
 /* --------------------------------------------------------------------------
    2. RESET & BASE ELEMENTS
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -137,7 +139,10 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-img, svg, picture, video {
+img,
+svg,
+picture,
+video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -149,7 +154,10 @@ a {
   transition: color var(--transition-fast);
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
   color: inherit;
   background: none;
@@ -161,11 +169,17 @@ button {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.25;
@@ -177,7 +191,8 @@ p {
   font-size: 1.025rem;
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--font-mono);
 }
 
@@ -541,7 +556,8 @@ code, pre {
   transition: all var(--transition-fast);
 }
 
-.mobile-nav-link:hover, .mobile-nav-link.active {
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
   color: var(--accent-cyan);
   background: rgba(0, 229, 255, 0.08);
 }
@@ -696,9 +712,20 @@ code, pre {
 }
 
 @keyframes pulseGreen {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
 }
 
 .hero-title {
@@ -784,8 +811,15 @@ code, pre {
 }
 
 @keyframes cursorBlink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-social-row {
@@ -851,9 +885,17 @@ code, pre {
   border-radius: 50%;
 }
 
-.dot-red { background: #ef4444; }
-.dot-yellow { background: #f59e0b; }
-.dot-green { background: #10b981; }
+.dot-red {
+  background: #ef4444;
+}
+
+.dot-yellow {
+  background: #f59e0b;
+}
+
+.dot-green {
+  background: #10b981;
+}
 
 .window-title {
   font-family: var(--font-mono);
@@ -969,11 +1011,26 @@ code, pre {
   line-height: 1.65;
 }
 
-.code-keyword { color: #c084fc; }
-.code-var { color: #38bdf8; }
-.code-string { color: #34d399; }
-.code-comment { color: #64748b; font-style: italic; }
-.code-bool { color: #f59e0b; }
+.code-keyword {
+  color: #c084fc;
+}
+
+.code-var {
+  color: #38bdf8;
+}
+
+.code-string {
+  color: #34d399;
+}
+
+.code-comment {
+  color: #64748b;
+  font-style: italic;
+}
+
+.code-bool {
+  color: #f59e0b;
+}
 
 /* Floating Stats Chip */
 .floating-badge {
@@ -1003,8 +1060,13 @@ code, pre {
 }
 
 @keyframes floatSlow {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-8px);
+  }
 }
 
 .badge-icon {
@@ -1747,23 +1809,53 @@ code, pre {
   height: 4px;
 }
 
-.channel-whatsapp::before { background: #25d366; }
-.channel-whatsapp:hover { border-color: #25d366; }
+.channel-whatsapp::before {
+  background: #25d366;
+}
 
-.channel-telegram::before { background: #229ed9; }
-.channel-telegram:hover { border-color: #229ed9; }
+.channel-whatsapp:hover {
+  border-color: #25d366;
+}
 
-.channel-instagram::before { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-.channel-instagram:hover { border-color: #e1306c; }
+.channel-telegram::before {
+  background: #229ed9;
+}
 
-.channel-github::before { background: #8b5cf6; }
-.channel-github:hover { border-color: #8b5cf6; }
+.channel-telegram:hover {
+  border-color: #229ed9;
+}
 
-.channel-youtube::before { background: #ff0000; }
-.channel-youtube:hover { border-color: #ff0000; }
+.channel-instagram::before {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
 
-.channel-discord::before { background: #5865f2; }
-.channel-discord:hover { border-color: #5865f2; }
+.channel-instagram:hover {
+  border-color: #e1306c;
+}
+
+.channel-github::before {
+  background: #8b5cf6;
+}
+
+.channel-github:hover {
+  border-color: #8b5cf6;
+}
+
+.channel-youtube::before {
+  background: #ff0000;
+}
+
+.channel-youtube:hover {
+  border-color: #ff0000;
+}
+
+.channel-discord::before {
+  background: #5865f2;
+}
+
+.channel-discord:hover {
+  border-color: #5865f2;
+}
 
 .channel-icon {
   width: 54px;
@@ -1775,12 +1867,35 @@ code, pre {
   margin-bottom: 1.25rem;
 }
 
-.channel-whatsapp .channel-icon { background: rgba(37, 211, 102, 0.15); color: #25d366; }
-.channel-telegram .channel-icon { background: rgba(34, 158, 217, 0.15); color: #229ed9; }
-.channel-instagram .channel-icon { background: rgba(225, 48, 108, 0.15); color: #e1306c; }
-.channel-github .channel-icon { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
-.channel-youtube .channel-icon { background: rgba(255, 0, 0, 0.15); color: #ff0000; }
-.channel-discord .channel-icon { background: rgba(88, 101, 242, 0.15); color: #5865f2; }
+.channel-whatsapp .channel-icon {
+  background: rgba(37, 211, 102, 0.15);
+  color: #25d366;
+}
+
+.channel-telegram .channel-icon {
+  background: rgba(34, 158, 217, 0.15);
+  color: #229ed9;
+}
+
+.channel-instagram .channel-icon {
+  background: rgba(225, 48, 108, 0.15);
+  color: #e1306c;
+}
+
+.channel-github .channel-icon {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+}
+
+.channel-youtube .channel-icon {
+  background: rgba(255, 0, 0, 0.15);
+  color: #ff0000;
+}
+
+.channel-discord .channel-icon {
+  background: rgba(88, 101, 242, 0.15);
+  color: #5865f2;
+}
 
 .channel-icon svg {
   width: 28px;
@@ -2204,8 +2319,13 @@ textarea.form-control {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .spin-animation {
@@ -2216,7 +2336,10 @@ textarea.form-control {
    16. PRINT & ACCESSIBILITY STYLES
    -------------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -2716,5 +2839,188 @@ textarea.form-control {
 
   .hero-title {
     font-size: 1.72rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   18. TABLET, LAPTOP & LARGE DESKTOP RESPONSIVE ENHANCEMENTS
+   -------------------------------------------------------------------------- */
+
+/* Shared Cross-Device Grid & Image Fluidity */
+.about-timelines-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-timelines-grid > * {
+  min-width: 0;
+}
+
+.about-hero-grid > div > img:not(.profile-avatar-large),
+.community-hero-grid > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.section .about-hero-grid:last-child {
+  margin-bottom: 0;
+}
+
+.contact-grid {
+  align-items: start;
+}
+
+/* Tablet Portrait & Landscape (640px - 991px) */
+@media (min-width: 640px) and (max-width: 991px) {
+  .hobbies-grid,
+  .roadmap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.25rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand p {
+    max-width: 560px;
+  }
+}
+
+/* Compact Laptop Navbar Tuning (992px - 1180px) */
+@media (min-width: 992px) and (max-width: 1180px) {
+  .brand-logo {
+    font-size: 1.12rem;
+  }
+
+  .nav-menu {
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Standard Laptops (992px - 1439px: 1024px, 1280x720, 1366x768) */
+@media (min-width: 992px) {
+  .about-timelines-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 0.9fr 1.2fr;
+    gap: 2.75rem;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .roadmap-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1366px) {
+  .hero {
+    min-height: calc(100vh - var(--header-height));
+    padding: 2.75rem 0 3.5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.45rem, 3.6vw, 3.35rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 1.65rem;
+  }
+
+  .hero-tech-stack {
+    margin-top: 1.85rem;
+    padding-top: 1.35rem;
+  }
+
+  .section {
+    padding: 4.25rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Prevent 3-column project button wrapping on 1100px - 1279px laptops */
+@media (min-width: 1100px) and (max-width: 1279px) {
+  .project-body {
+    padding: 1.25rem;
+  }
+
+  .project-actions .btn-sm {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Large Desktop Monitors (>= 1440px: 1080p / 2K) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4.5rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-card-frame {
+    max-width: 520px;
+  }
+
+  .about-timelines-grid {
+    gap: 4rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4rem;
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .community-channels-grid {
+    gap: 2.25rem;
+  }
+}
+
+/* Ultra-Wide Desktop Monitors (>= 1680px: 2K / 4K) */
+@media (min-width: 1680px) {
+  :root {
+    --container-max: 1420px;
+  }
+
+  .section {
+    padding: 5.5rem 0;
   }
 }
