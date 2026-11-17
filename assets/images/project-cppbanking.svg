@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cppGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#cppGrad)" />
+  <rect width="600" height="40" rx="16" fill="#1e1b4b" />
+  <rect y="25" width="600" height="15" fill="#1e1b4b" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="20" r="5" fill="#10b981" />
+  <text x="80" y="24" fill="#a5b4fc" font-family="monospace" font-size="12">g++ -O3 ledger_engine.cpp -o ledger &amp;&amp; ./ledger</text>
+
+  <!-- High speed ledger UI -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="540" height="135" rx="8" fill="#090d16" stroke="#312e81" />
+    <text x="15" y="25" fill="#818cf8" font-family="monospace" font-size="12">=== HIGH-PERFORMANCE IN-MEMORY ACCOUNT LEDGER (C++20) ===</text>
+    <text x="15" y="48" fill="#e2e8f0" font-family="monospace" font-size="12">[B-Tree Indexing] 500,000 transactions loaded into memory</text>
+    <text x="15" y="70" fill="#34d399" font-family="monospace" font-size="12">Benchmark: 100,000 Transfers verified in 84.2 ms (1.18M tx/sec)</text>
+    <text x="15" y="92" fill="#38bdf8" font-family="monospace" font-size="12">Concurrency Model: Lock-Free Atomic Ring Buffer (Zero Contention)</text>
+    <text x="15" y="114" fill="#cbd5e1" font-family="monospace" font-size="12">Memory Footprint: 26.4MB | Double-entry invariant integrity: PASS</text>
+  </g>
+
+  <!-- Interactive visual table -->
+  <g transform="translate(30, 210)">
+    <rect x="0" y="0" width="540" height="120" rx="8" fill="#1e1b4b" stroke="#3730a3" />
+    <text x="20" y="25" fill="#c7d2fe" font-family="sans-serif" font-weight="bold" font-size="12">TX HASH</text>
+    <text x="160" y="25" fill="#c7d2fe" font-family="sans-serif" font-weight="bold" font-size="12">FROM -&gt; TO</text>
+    <text x="320" y="25" fill="#c7d2fe" font-family="sans-serif" font-weight="bold" font-size="12">AMOUNT</text>
+    <text x="440" y="25" fill="#c7d2fe" font-family="sans-serif" font-weight="bold" font-size="12">STATUS</text>
+
+    <line x1="20" y1="35" x2="520" y2="35" stroke="#312e81" stroke-width="1" />
+
+    <text x="20" y="55" fill="#93c5fd" font-family="monospace" font-size="11">0x8F9a...2B</text>
+    <text x="160" y="55" fill="#e2e8f0" font-family="sans-serif" font-size="11">ACC-904 -&gt; ACC-112</text>
+    <text x="320" y="55" fill="#34d399" font-family="monospace" font-size="11">$14,500.00</text>
+    <text x="440" y="55" fill="#10b981" font-family="sans-serif" font-size="11">CONFIRMED</text>
+
+    <text x="20" y="80" fill="#93c5fd" font-family="monospace" font-size="11">0x7C1d...4E</text>
+    <text x="160" y="80" fill="#e2e8f0" font-family="sans-serif" font-size="11">ACC-331 -&gt; ACC-884</text>
+    <text x="320" y="80" fill="#34d399" font-family="monospace" font-size="11">$3,250.00</text>
+    <text x="440" y="80" fill="#10b981" font-family="sans-serif" font-size="11">CONFIRMED</text>
+
+    <text x="20" y="105" fill="#93c5fd" font-family="monospace" font-size="11">0x3A2e...91</text>
+    <text x="160" y="105" fill="#e2e8f0" font-family="sans-serif" font-size="11">ACC-552 -&gt; ACC-904</text>
+    <text x="320" y="105" fill="#34d399" font-family="monospace" font-size="11">$820.50</text>
+    <text x="440" y="105" fill="#10b981" font-family="sans-serif" font-size="11">CONFIRMED</text>
+  </g>
+</svg>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Technical Skills &amp; Developer Dashboard — Ashok Kumar Saini | Code With Ashok</title>
+  <meta name="title" content="Technical Skills &amp; Developer Dashboard — Ashok Kumar Saini | Code With Ashok" />
+  <meta name="description" content="Explore Ashok Kumar Saini's technical skill set across Frontend Development (HTML5, CSS3, JavaScript), Programming Languages (C, C++, Java, Python), and Developer Tools (Git, GitHub, VS Code)." />
+  <meta name="keywords" content="Ashok Kumar Saini Skills, Ashok Kumar Saini, Code With Ashok, HTML5, CSS3, JavaScript, C++, Java, Python, Git, GitHub, VS Code, Responsive Design, Problem Solving, UI/UX" />
+  <meta name="author" content="Ashok Kumar Saini" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codewithashok.dev/skills.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewithashok.dev/skills.html" />
+  <meta property="og:title" content="Technical Skills &amp; Developer Dashboard — Code With Ashok" />
+  <meta property="og:description" content="Comprehensive proficiency dashboard for Ashok across web development, systems programming, and modern engineering tools." />
+  <meta property="og:image" content="https://codewithashok.dev/assets/images/ashok.jpeg" />
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codewithashok.dev/skills.html" />
+  <meta property="twitter:title" content="Technical Skills &amp; Developer Dashboard — Code With Ashok" />
+  <meta property="twitter:description" content="Detailed technical proficiencies, progress metrics, and toolset of Ashok." />
+  <meta property="twitter:image" content="https://codewithashok.dev/assets/images/ashok.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/codewithashokk.png" />
+  <link rel="apple-touch-icon" href="assets/icons/codewithashokk.png" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Code With Ashok — Ashok Kumar Saini Technical Skills Dashboard",
+    "description": "Technical skills breakdown and proficiencies of software developer Ashok Kumar Saini.",
+    "url": "https://codewithashok.dev/skills.html"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow ambient-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-bottom-left" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Code With Ashok Home">
+        <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+        <span class="brand-text">Code With <span>Ashok</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link active">Skills</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch to light theme" title="Switch Theme">
+          <span id="theme-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" style="display: none;" id="desktop-cta">Let's Connect</a>
+        <style>@media(min-width: 768px){ #desktop-cta { display: inline-flex !important; } }</style>
+
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="skills.html" class="mobile-nav-link active">Skills</a>
+      <a href="community.html" class="mobile-nav-link">Community</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      <div class="mobile-socials">
+        <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="section-sm" style="padding-top: 3rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-title-wrap" style="margin-bottom: 2rem;">
+          <span class="section-tag">Competencies &amp; Tech Stack</span>
+          <h1 class="section-title">Technical <span class="text-gradient">Skills</span> Dashboard</h1>
+          <p class="section-desc">A categorized overview of programming languages, frontend tools, and engineering methodologies. All proficiency metrics are structured for clean maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS DASHBOARD CONTAINER -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+
+        <!-- CATEGORY 1: FRONTEND DEVELOPMENT -->
+        <div class="skills-category-section reveal-on-scroll">
+          <div class="category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <div>
+              <h2 class="category-title">Frontend Development</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Crafting pixel-perfect, accessible, and high-performance interfaces</p>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- HTML5 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🌐</div>
+                  <h3 class="skill-name">HTML5</h3>
+                </div>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <p class="skill-desc">Semantic document structures, SEO accessibility tags, modern form validation, audio/video APIs, and Web Storage.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🎨</div>
+                  <h3 class="skill-name">CSS3</h3>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <p class="skill-desc">CSS Grid, Flexbox layouts, custom properties (variables), media queries, glassmorphism, transitions, and keyframe animations.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">⚡</div>
+                  <h3 class="skill-name">JavaScript (ES6+)</h3>
+                </div>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <p class="skill-desc">Modern syntax, asynchronous promises &amp; async/await, DOM manipulation, Fetch API, event delegation, and modular design patterns.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: PROGRAMMING LANGUAGES -->
+        <div class="skills-category-section reveal-on-scroll">
+          <div class="category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h2 class="category-title">Programming Languages</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Algorithmic foundations, object-oriented design, and systems concepts</p>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- C -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🔷</div>
+                  <h3 class="skill-name">C Language</h3>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <p class="skill-desc">Memory management with malloc/free, pointers, structs, file I/O operations, and foundational low-level programming constructs.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">⚙️</div>
+                  <h3 class="skill-name">C++ &amp; STL</h3>
+                </div>
+                <span class="skill-percentage">82%</span>
+              </div>
+              <p class="skill-desc">Standard Template Library (vectors, maps, sets), OOP principles (encapsulation, polymorphism), and competitive programming problem solving.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="82%"></div>
+              </div>
+            </div>
+
+            <!-- Java -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">☕</div>
+                  <h3 class="skill-name">Java</h3>
+                </div>
+                <span class="skill-percentage">78%</span>
+              </div>
+              <p class="skill-desc">Class hierarchies, interfaces, Collections framework, Exception handling, JVM execution lifecycle, and multithreading basics.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="78%"></div>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🐍</div>
+                  <h3 class="skill-name">Python</h3>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <p class="skill-desc">Scripting, automation, working with third-party APIs, file manipulation, list comprehensions, and data processing utilities.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: TOOLS & TECHNOLOGIES -->
+        <div class="skills-category-section reveal-on-scroll">
+          <div class="category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="category-title">Tools &amp; Technologies</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Productivity, environment setup, debugging, and version control workflow</p>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Git -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🌱</div>
+                  <h3 class="skill-name">Git</h3>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <p class="skill-desc">Branching strategies, interactive rebasing, merge conflict resolution, commit hygiene, and local repository management.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🐙</div>
+                  <h3 class="skill-name">GitHub</h3>
+                </div>
+                <span class="skill-percentage">86%</span>
+              </div>
+              <p class="skill-desc">Pull requests, code review discussions, issue tracking, GitHub Pages static hosting, README documentation, and open source collaboration.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="86%"></div>
+              </div>
+            </div>
+
+            <!-- VS Code -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">💻</div>
+                  <h3 class="skill-name">VS Code</h3>
+                </div>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <p class="skill-desc">Custom settings, keyboard shortcuts, Emmet acceleration, Live Server, debugging configurations, and extension ecosystems.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="92%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY 4: ADDITIONAL SKILLS -->
+        <div class="skills-category-section reveal-on-scroll">
+          <div class="category-header">
+            <div class="category-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div>
+              <h2 class="category-title">Additional Skills &amp; Practices</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Engineering principles that ensure long-term product quality</p>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Responsive Web Design -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">📱</div>
+                  <h3 class="skill-name">Responsive Web Design</h3>
+                </div>
+                <span class="skill-percentage">94%</span>
+              </div>
+              <p class="skill-desc">Mobile-first methodology, viewport scaling, flexible typography (clamp/rem), cross-browser compatibility, and zero horizontal overflows.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="94%"></div>
+              </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">🧠</div>
+                  <h3 class="skill-name">Problem Solving &amp; DSA</h3>
+                </div>
+                <span class="skill-percentage">84%</span>
+              </div>
+              <p class="skill-desc">Time and space complexity analysis (Big-O), arrays, hashing, two pointers, recursion, and decomposing complex requirements into step-by-step logic.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="84%"></div>
+              </div>
+            </div>
+
+            <!-- UI/UX Fundamentals -->
+            <div class="skill-card">
+              <div class="skill-card-top">
+                <div class="skill-identity">
+                  <div class="skill-icon-wrap" aria-hidden="true">✨</div>
+                  <h3 class="skill-name">UI/UX Fundamentals</h3>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <p class="skill-desc">Visual hierarchy, color theory, contrast ratios, micro-interactions, intuitive button states, and reducing user cognitive friction.</p>
+              <div class="progress-track">
+                <div class="progress-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEARNING ROADMAP (Continuous Improvement) -->
+        <div class="roadmap-box reveal-on-scroll">
+          <span class="section-tag">Ongoing Growth</span>
+          <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem;">Continuous Learning Roadmap</h2>
+          <p style="color: var(--text-secondary); max-width: 680px;">
+            Technology moves fast. Here are the tools and paradigms I am actively researching and building side experiments with:
+          </p>
+
+          <div class="roadmap-grid">
+            <div class="roadmap-item">
+              <h3 class="roadmap-title">React &amp; Next.js</h3>
+              <div class="roadmap-status">Currently Exploring</div>
+              <p style="font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.4rem;">Component-driven frontend, hooks, and server-side rendering patterns.</p>
+            </div>
+
+            <div class="roadmap-item">
+              <h3 class="roadmap-title">TypeScript</h3>
+              <div class="roadmap-status">In Progress</div>
+              <p style="font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.4rem;">Static typing, interfaces, generics, and enterprise-grade code safety.</p>
+            </div>
+
+            <div class="roadmap-item">
+              <h3 class="roadmap-title">Node.js &amp; Express</h3>
+              <div class="roadmap-status">Upcoming Focus</div>
+              <p style="font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.4rem;">Building robust RESTful APIs, JWT authentication, and database schemas.</p>
+            </div>
+
+            <div class="roadmap-item">
+              <h3 class="roadmap-title">SQL &amp; PostgreSQL</h3>
+              <div class="roadmap-status">Active Study</div>
+              <p style="font-size: 0.825rem; color: var(--text-secondary); margin-top: 0.4rem;">Relational modeling, indexing, joins, and transactional database integrity.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+            <span class="brand-text">Code With <span>Ashok</span></span>
+          </a>
+          <p>
+            A personal developer brand dedicated to building intuitive, high-performance web applications and empowering developers through open learning and community.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.5rem;">
+            <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram Channel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/codewithashokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Showcase</a></li>
+            <li><a href="skills.html" class="footer-link">Skills &amp; Toolkit</a></li>
+            <li><a href="community.html" class="footer-link">Developer Community</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Contact</h3>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-muted);">Email:</span> <a href="mailto:codewithashokk@gmail.com" class="footer-link">codewithashokk@gmail.com</a></li>
+            <li><span style="color: var(--text-muted);">Location:</span> Jhunjhunu, Rajasthan (Open to Remote Globally)</li>
+            <li><span style="color: var(--text-muted);">Status:</span> Open for Projects &amp; Roles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Code With Ashok — Ashok Kumar Saini. All Rights Reserved.
+        </p>
+        <p class="copyright-text" style="font-size: 0.8rem;">
+          Designed &amp; Hand-Crafted with Pure HTML5, CSS3 &amp; Vanilla JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/main.js"></script>
+</body>
+</html>

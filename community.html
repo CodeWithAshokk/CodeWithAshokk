@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Developer Community — Code With Ashok Network</title>
+  <meta name="title" content="Developer Community — Code With Ashok Network" />
+  <meta name="description" content="Join the Code With Ashok developer community on WhatsApp, Telegram, and GitHub. Participate in weekly coding discussions, access curated resources, and accelerate your coding journey." />
+  <meta name="keywords" content="Code With Ashok Community, Ashok Kumar Saini, Developer WhatsApp Group, Telegram Coding Channel, Programming Community, Learn to Code, Code Reviews, Student Developers" />
+  <meta name="author" content="Ashok Kumar Saini" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codewithashok.dev/community.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewithashok.dev/community.html" />
+  <meta property="og:title" content="Developer Community — Code With Ashok Network" />
+  <meta property="og:description" content="Connect with fellow developers, get your code reviewed, and access free programming resources in our WhatsApp and Telegram groups." />
+  <meta property="og:image" content="https://codewithashok.dev/assets/images/community-hero.svg" />
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codewithashok.dev/community.html" />
+  <meta property="twitter:title" content="Developer Community — Code With Ashok" />
+  <meta property="twitter:description" content="Join the Code With Ashok developer network. Connect, learn, and build together." />
+  <meta property="twitter:image" content="https://codewithashok.dev/assets/images/community-hero.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/codewithashokk.png" />
+  <link rel="apple-touch-icon" href="assets/icons/codewithashokk.png" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Code With Ashok Community",
+    "url": "https://codewithashok.dev/community.html",
+    "logo": "https://codewithashok.dev/assets/icons/codewithashokk.png",
+    "description": "Collaborative developer group facilitating peer learning, programming resources, and code reviews."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow ambient-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-bottom-left" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Code With Ashok Home">
+        <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+        <span class="brand-text">Code With <span>Ashok</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="community.html" class="nav-link active">Community</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch to light theme" title="Switch Theme">
+          <span id="theme-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" style="display: none;" id="desktop-cta">Let's Connect</a>
+        <style>@media(min-width: 768px){ #desktop-cta { display: inline-flex !important; } }</style>
+
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="projects.html" class="mobile-nav-link">Projects</a>
+      <a href="skills.html" class="mobile-nav-link">Skills</a>
+      <a href="community.html" class="mobile-nav-link active">Community</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      <div class="mobile-socials">
+        <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="section-sm" style="padding-top: 3rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="community-hero-grid">
+          <div class="reveal-on-scroll">
+            <span class="section-tag">Grow With Fellow Developers</span>
+            <h1 class="section-title">The Code With Ashok <span class="text-gradient">Community</span></h1>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              A thriving, supportive space built by developers, for developers. Whether you are writing your first "Hello World" or preparing for technical interviews, you don't have to code alone.
+            </p>
+            <div class="btn-group">
+              <a href="#channels" class="btn btn-primary btn-lg">Explore Community Channels</a>
+              <a href="#why-join" class="btn btn-secondary btn-lg">Why Join Us?</a>
+            </div>
+          </div>
+          <div class="reveal-on-scroll">
+            <img src="assets/images/community-hero.svg" alt="Code With Ashok Community Hub Diagram" width="600" height="400" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY JOIN OUR COMMUNITY -->
+    <section id="why-join" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-tag">Core Value</span>
+          <h2 class="section-title">Why Join Our Community?</h2>
+          <p class="section-desc">Designed from the ground up to solve the real obstacles learners face when mastering code.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Pillar 1: Coding Discussions -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">💬</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Active Coding Discussions</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              Stuck on a tricky bug or conceptual confusion? Post your question and code snippet to get constructive answers from Ashok and experienced community members.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Curated Resources -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">📚</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Hand-Picked Resources</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              Avoid tutorial paralysis. Gain instant access to vetted PDF roadmaps, cheat sheets, curated GitHub repositories, and recommended problem sets.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Learning Opportunities -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">🚀</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Learning Challenges &amp; Projects</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              Participate in weekly coding exercises, collaborative open-source mini-projects, and live feedback sessions that reinforce your skills through practice.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Career & Internship Alerts -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">💼</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Internship &amp; Career Updates</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              Stay ahead with verified notifications about upcoming junior developer internships, hackathons, open-source programs (like GSoC), and resume tips.
+            </p>
+          </div>
+
+          <!-- Pillar 5: Peer Code Reviews -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">🔍</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Constructive Code Reviews</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              Share your GitHub repositories to receive actionable suggestions on folder structure, clean code practices, semantic markup, and performance tuning.
+            </p>
+          </div>
+
+          <!-- Pillar 6: Friendly Culture -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="category-icon" style="margin-bottom: 1rem;" aria-hidden="true">🤝</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Zero-Toxicity Environment</h3>
+            <p style="font-size: 0.925rem; color: var(--text-secondary); line-height: 1.6;">
+              A strictly moderated, welcoming space where no question is "too basic" and respect for every member's learning pace is paramount.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OFFICIAL COMMUNITY CHANNELS -->
+    <section id="channels" class="section">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-tag">Connect With Us</span>
+          <h2 class="section-title">Official Community Channels</h2>
+          <p class="section-desc">Choose your preferred platform to plug into the network. All invite links are direct and configurable.</p>
+        </div>
+
+        <div class="community-channels-grid">
+          
+          <!-- WhatsApp Channel -->
+          <div class="channel-card channel-whatsapp reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <h3 class="channel-title">WhatsApp Developer Group</h3>
+              <p class="channel-desc">
+                Instant group discussions, quick troubleshooting for syntax errors, daily coding tips, and direct announcements from Ashok.
+              </p>
+            </div>
+            <div>
+              <a href="https://chat.whatsapp.com/invite/codewithashok" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; background: #25d366; color: #0b1120;">
+                Join WhatsApp Group
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span style="display: block; text-align: center; margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-muted);">
+                * Configurable group link
+              </span>
+            </div>
+          </div>
+
+          <!-- Telegram Channel -->
+          <div class="channel-card channel-telegram reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="channel-title">Telegram Developer Hub</h3>
+              <p class="channel-desc">
+                Organized resource vault containing programming PDF books, DSA cheatsheets, source code archives, and long-form study material without storage limits.
+              </p>
+            </div>
+            <div>
+              <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; background: #229ed9; color: #ffffff;">
+                Join Telegram Channel
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span style="display: block; text-align: center; margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-muted);">
+                * Configurable channel link
+              </span>
+            </div>
+          </div>
+
+          <!-- Instagram Community -->
+          <div class="channel-card channel-instagram reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <h3 class="channel-title">Instagram Dev Page</h3>
+              <p class="channel-desc">
+                Follow @CodeWithAshokk for visual coding tips, developer reels, UI design highlights, computer science trivia, and behind-the-scenes coding setups.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/codewithashokk" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: #ffffff;">
+                Follow on Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span style="display: block; text-align: center; margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-muted);">
+                * Configurable profile link
+              </span>
+            </div>
+          </div>
+
+          <!-- GitHub Organization / Discussions -->
+          <div class="channel-card channel-github reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <h3 class="channel-title">GitHub Discussions &amp; Repos</h3>
+              <p class="channel-desc">
+                Contribute to community open-source repositories, submit pull requests, report bugs, and learn collaborative Git workflows hands-on.
+              </p>
+            </div>
+            <div>
+              <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                Explore GitHub Org
+              </a>
+            </div>
+          </div>
+
+          <!-- YouTube Video Hub (Future Placeholder) -->
+          <div class="channel-card channel-youtube reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </div>
+              <h3 class="channel-title">YouTube Code Tutorials</h3>
+              <p class="channel-desc">
+                Video walkthroughs explaining full-stack projects, responsive design blueprints, and data structures step-by-step.
+              </p>
+            </div>
+            <div>
+              <a href="https://youtube.com/@codewithashok" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                Subscribe on YouTube
+              </a>
+            </div>
+          </div>
+
+          <!-- 1:1 Mentorship Consultation -->
+          <div class="channel-card channel-discord reveal-on-scroll">
+            <div>
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="channel-title">1:1 Peer Mentorship</h3>
+              <p class="channel-desc">
+                Need personalized guidance for choosing your tech stack, building your first portfolio project, or preparing for college placements?
+              </p>
+            </div>
+            <div>
+              <a href="contact.html" class="btn btn-outline" style="width: 100%;">
+                Request 1:1 Session
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMMUNITY FAQ ACCORDION -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-title-wrap reveal-on-scroll">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Community FAQ</h2>
+          <p class="section-desc">Common questions answered about joining and participating in Code With Ashok.</p>
+        </div>
+
+        <div class="faq-section reveal-on-scroll">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is joining the Code With Ashok community free?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, 100% free! All our WhatsApp groups, Telegram resource libraries, and public coding sessions are open to any curious learner at zero cost.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Who can join the community?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Anyone passionate about technology! Whether you are a high schooler starting with basic HTML, a college engineering student, or a self-taught developer looking to level up your portfolio, you are warmly welcome.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I get my project or code reviewed?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Simply post your GitHub repository link or live demo URL in the group along with a short summary of what you built and specific areas you'd like feedback on (e.g. responsive layout, JavaScript performance, or code organization).</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What are the group rules regarding spam and promotions?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>We maintain a strict zero-tolerance policy against spam, unauthorized promotional links, pyramid schemes, or disrespectful behavior. Discussions are strictly centered on coding, learning resources, and developer growth.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+            <span class="brand-text">Code With <span>Ashok</span></span>
+          </a>
+          <p>
+            A personal developer brand dedicated to building intuitive, high-performance web applications and empowering developers through open learning and community.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.5rem;">
+            <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram Channel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/codewithashokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Showcase</a></li>
+            <li><a href="skills.html" class="footer-link">Skills &amp; Toolkit</a></li>
+            <li><a href="community.html" class="footer-link">Developer Community</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Contact</h3>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-muted);">Email:</span> <a href="mailto:codewithashokk@gmail.com" class="footer-link">codewithashokk@gmail.com</a></li>
+            <li><span style="color: var(--text-muted);">Location:</span> Jhunjhunu, Rajasthan (Open to Remote Globally)</li>
+            <li><span style="color: var(--text-muted);">Status:</span> Open for Projects &amp; Roles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Code With Ashok — Ashok Kumar Saini. All Rights Reserved.
+        </p>
+        <p class="copyright-text" style="font-size: 0.8rem;">
+          Designed &amp; Hand-Crafted with Pure HTML5, CSS3 &amp; Vanilla JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/main.js"></script>
+</body>
+</html>

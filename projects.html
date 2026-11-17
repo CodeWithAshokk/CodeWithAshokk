@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Projects Showcase — Ashok Kumar Saini | Code With Ashok</title>
+  <meta name="title" content="Projects Showcase — Ashok Kumar Saini | Code With Ashok" />
+  <meta name="description" content="Explore a curated showcase of full-stack web applications, interactive frontend interfaces, Python automation tools, and C++ algorithms developed by Ashok Kumar Saini." />
+  <meta name="keywords" content="Projects, Ashok Kumar Saini, Code With Ashok, Web Apps, JavaScript Projects, Frontend Portfolio, Full Stack Projects, Python Scripts, C++ Algorithms, Source Code" />
+  <meta name="author" content="Ashok Kumar Saini" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://codewithashok.dev/projects.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codewithashok.dev/projects.html" />
+  <meta property="og:title" content="Projects Showcase — Code With Ashok" />
+  <meta property="og:description" content="Discover full-stack applications, interactive algorithm visualizers, and open-source tools with live demos and GitHub source code." />
+  <meta property="og:image" content="https://codewithashok.dev/assets/images/project-devpulse.svg" />
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codewithashok.dev/projects.html" />
+  <meta property="twitter:title" content="Projects Showcase — Code With Ashok" />
+  <meta property="twitter:description" content="Curated developer projects with live demos and source code." />
+  <meta property="twitter:image" content="https://codewithashok.dev/assets/images/project-devpulse.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/codewithashokk.png" />
+  <link rel="apple-touch-icon" href="assets/icons/codewithashokk.png" />
+  <link rel="alternate icon" href="favicon.ico" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Code With Ashok — Ashok Kumar Saini Projects Showcase",
+    "description": "Showcase of web applications, algorithms, and developer tools created by Ashok Kumar Saini.",
+    "url": "https://codewithashok.dev/projects.html"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow ambient-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-bottom-left" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Code With Ashok Home">
+        <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+        <span class="brand-text">Code With <span>Ashok</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch to light theme" title="Switch Theme">
+          <span id="theme-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm" style="display: none;" id="desktop-cta">Let's Connect</a>
+        <style>@media(min-width: 768px){ #desktop-cta { display: inline-flex !important; } }</style>
+
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation drawer" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="projects.html" class="mobile-nav-link active">Projects</a>
+      <a href="skills.html" class="mobile-nav-link">Skills</a>
+      <a href="community.html" class="mobile-nav-link">Community</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+      <div class="mobile-socials">
+        <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="section-sm" style="padding-top: 3rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-title-wrap" style="margin-bottom: 1.5rem;">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h1 class="section-title">Featured <span class="text-gradient">Projects</span> &amp; Builds</h1>
+          <p class="section-desc">Explore Ashok Kumar Saini's real-world software builds: VidhiMitra Voice AI, QR Code Studio, and Rechat (collaboration with CodeWithRepswal).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER & SEARCH CONTROLS SECTION -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+
+        <!-- Search Bar and Category Filters -->
+        <div class="projects-filter-bar reveal-on-scroll">
+          
+          <!-- Live Search Input -->
+          <div class="search-box">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="project-search-input" class="search-input" placeholder="Search by title, keyword, or tech (e.g. Rechat, Voice AI, Canvas)..." aria-label="Search projects by keyword or tech stack" />
+            <button id="clear-search-btn" class="clear-search-btn" aria-label="Clear search query" title="Clear">✕</button>
+          </div>
+
+          <!-- Category Buttons -->
+          <div class="filter-categories" role="tablist" aria-label="Filter Projects By Category">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Builds (3)</button>
+            <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack / Realtime</button>
+            <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">Voice AI</button>
+            <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend Tools</button>
+          </div>
+
+        </div>
+
+        <!-- Project Counter Badge -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">
+          <span id="projects-count" style="font-size: 0.875rem; font-family: var(--font-mono); color: var(--accent-cyan); font-weight: 600;">
+            Loading projects...
+          </span>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">
+            💡 Click <strong>Live Demo</strong> to preview or <strong>GitHub</strong> for source code.
+          </span>
+        </div>
+
+        <!-- Projects Grid Container (Populated dynamically by js/projects.js) -->
+        <div id="projects-container" class="projects-grid" role="region" aria-live="polite">
+          <!-- Fallback or populated by JavaScript -->
+          <noscript>
+            <div class="empty-state">
+              <p>JavaScript is required to display and filter the project showcase dynamically.</p>
+            </div>
+          </noscript>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION FOR COLLABORATION -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;" class="reveal-on-scroll">
+          <span class="section-tag">Have an Idea?</span>
+          <h2 class="section-title">Let's Build Something Exceptional Together</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            Looking for a dedicated developer to build a modern responsive website, optimize web performance, or collaborate on a software project?
+          </p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+            <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              Explore GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/icons/codewithashokk.png" alt="Code With Ashok Logo" class="brand-logo-img" width="40" height="40" />
+            <span class="brand-text">Code With <span>Ashok</span></span>
+          </a>
+          <p>
+            A personal developer brand dedicated to building intuitive, high-performance web applications and empowering developers through open learning and community.
+          </p>
+          <div class="social-links-row" style="margin-top: 1.5rem;">
+            <a href="https://github.com/CodeWithAshokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ashokkumarsainii" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://t.me/+O-ia_6re6TllYWFl" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram Channel">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/codewithashokk" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram Page">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Me</a></li>
+            <li><a href="projects.html" class="footer-link">Projects Showcase</a></li>
+            <li><a href="skills.html" class="footer-link">Skills &amp; Toolkit</a></li>
+            <li><a href="community.html" class="footer-link">Developer Community</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Contact</h3>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-muted);">Email:</span> <a href="mailto:codewithashokk@gmail.com" class="footer-link">codewithashokk@gmail.com</a></li>
+            <li><span style="color: var(--text-muted);">Location:</span> Jhunjhunu, Rajasthan (Open to Remote Globally)</li>
+            <li><span style="color: var(--text-muted);">Status:</span> Open for Projects &amp; Roles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Code With Ashok — Ashok Kumar Saini. All Rights Reserved.
+        </p>
+        <p class="copyright-text" style="font-size: 0.8rem;">
+          Designed &amp; Hand-Crafted with Pure HTML5, CSS3 &amp; Vanilla JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

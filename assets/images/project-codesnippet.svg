@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#codeGrad)" />
+  <!-- Titlebar -->
+  <rect width="600" height="40" rx="16" fill="#111827" />
+  <rect y="25" width="600" height="15" fill="#111827" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="20" r="5" fill="#10b981" />
+  <rect x="80" y="8" width="130" height="24" rx="6" fill="#1f2937" />
+  <text x="95" y="24" fill="#38bdf8" font-family="monospace" font-size="11">snippet.js ✕</text>
+  <rect x="220" y="8" width="130" height="24" rx="6" fill="#111827" />
+  <text x="235" y="24" fill="#6b7280" font-family="monospace" font-size="11">styles.css</text>
+  <!-- Editor pane -->
+  <g transform="translate(30, 65)">
+    <!-- Line numbers -->
+    <text x="0" y="20" fill="#4b5563" font-family="monospace" font-size="13">01</text>
+    <text x="0" y="45" fill="#4b5563" font-family="monospace" font-size="13">02</text>
+    <text x="0" y="70" fill="#4b5563" font-family="monospace" font-size="13">03</text>
+    <text x="0" y="95" fill="#4b5563" font-family="monospace" font-size="13">04</text>
+    <text x="0" y="120" fill="#4b5563" font-family="monospace" font-size="13">05</text>
+    <text x="0" y="145" fill="#4b5563" font-family="monospace" font-size="13">06</text>
+    <text x="0" y="170" fill="#4b5563" font-family="monospace" font-size="13">07</text>
+    <text x="0" y="195" fill="#4b5563" font-family="monospace" font-size="13">08</text>
+    <text x="0" y="220" fill="#4b5563" font-family="monospace" font-size="13">09</text>
+    <text x="0" y="245" fill="#4b5563" font-family="monospace" font-size="13">10</text>
+    <!-- Code line text -->
+    <text x="40" y="20" fill="#c084fc" font-family="monospace" font-size="13">import</text>
+    <text x="95" y="20" fill="#f8fafc" font-family="monospace" font-size="13">&#123; createEngine &#125;</text>
+    <text x="245" y="20" fill="#c084fc" font-family="monospace" font-size="13">from</text>
+    <text x="290" y="20" fill="#34d399" font-family="monospace" font-size="13">'@codewithashok/core'</text>
+    <text x="40" y="45" fill="#64748b" font-family="monospace" font-size="13">// Initialize Sandbox Realtime Runner</text>
+    <text x="40" y="70" fill="#38bdf8" font-family="monospace" font-size="13">const</text>
+    <text x="90" y="70" fill="#f8fafc" font-family="monospace" font-size="13">sandbox =</text>
+    <text x="175" y="70" fill="#fbbf24" font-family="monospace" font-size="13">createEngine</text>
+    <text x="275" y="70" fill="#f8fafc" font-family="monospace" font-size="13">(&#123; debug: true &#125;);</text>
+    <text x="40" y="95" fill="#38bdf8" font-family="monospace" font-size="13">export async function</text>
+    <text x="235" y="95" fill="#60a5fa" font-family="monospace" font-size="13">executeCode</text>
+    <text x="325" y="95" fill="#f8fafc" font-family="monospace" font-size="13">(rawCode) &#123;</text>
+    <text x="65" y="120" fill="#c084fc" font-family="monospace" font-size="13">const</text>
+    <text x="115" y="120" fill="#f8fafc" font-family="monospace" font-size="13">result =</text>
+    <text x="195" y="120" fill="#c084fc" font-family="monospace" font-size="13">await</text>
+    <text x="245" y="120" fill="#f8fafc" font-family="monospace" font-size="13">sandbox.run(rawCode);</text>
+    <text x="65" y="145" fill="#c084fc" font-family="monospace" font-size="13">return</text>
+    <text x="120" y="145" fill="#f8fafc" font-family="monospace" font-size="13">&#123; output: result, time: performance.now() &#125;;</text>
+    <text x="40" y="170" fill="#f8fafc" font-family="monospace" font-size="13">&#125;</text>
+  </g>
+  <!-- Output drawer -->
+  <rect x="25" y="275" width="550" height="65" rx="8" fill="#000000" stroke="#1f2937" />
+  <text x="40" y="295" fill="#10b981" font-family="monospace" font-size="11">✓ Sandbox Build Succeeded (0.04s) • Output: [Object Object]</text>
+  <text x="40" y="320" fill="#94a3b8" font-family="monospace" font-size="11">&gt; CodeSnippet Manager: 120 snippets indexed in LocalStorage</text>
+</svg>

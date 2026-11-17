@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#pyGrad)" />
+  <rect width="600" height="40" rx="16" fill="#064e3b" />
+  <rect y="25" width="600" height="15" fill="#064e3b" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="20" r="5" fill="#10b981" />
+  <text x="80" y="24" fill="#6ee7b7" font-family="monospace" font-size="12">python3 monitor.py --daemon --auto-clean</text>
+
+  <!-- Terminal Display -->
+  <g transform="translate(30, 60)">
+    <text x="10" y="25" fill="#34d399" font-family="monospace" font-size="12">[INFO] PyAutomate Daemon v2.4 initialized...</text>
+    <text x="10" y="48" fill="#a7f3d0" font-family="monospace" font-size="12">[SCAN] Monitoring directories: /Downloads, /Desktop, /TempLogs</text>
+    <text x="10" y="71" fill="#38bdf8" font-family="monospace" font-size="12">[ACTION] Organized 42 files into respective media/document folders</text>
+    <text x="10" y="94" fill="#fbbf24" font-family="monospace" font-size="12">[CPU LOAD] 14.2% | RAM: 184MB / 16GB | Threads: 4 Active</text>
+    <text x="10" y="117" fill="#34d399" font-family="monospace" font-size="12">[TELEGRAM NOTIFIER] Status dispatch sent: 200 OK</text>
+  </g>
+
+  <!-- Performance Visual Meters -->
+  <g transform="translate(30, 195)">
+    <rect x="0" y="0" width="260" height="75" rx="8" fill="#064e3b" fill-opacity="0.5" stroke="#059669" />
+    <text x="15" y="25" fill="#a7f3d0" font-family="sans-serif" font-size="12">Automated Rules Processed</text>
+    <text x="15" y="55" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="22">1,480+</text>
+    <text x="110" y="55" fill="#34d399" font-family="sans-serif" font-size="12">files saved / week</text>
+
+    <rect x="280" y="0" width="260" height="75" rx="8" fill="#064e3b" fill-opacity="0.5" stroke="#059669" />
+    <text x="295" y="25" fill="#a7f3d0" font-family="sans-serif" font-size="12">Execution Latency</text>
+    <text x="295" y="55" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="22">&lt; 3.2 ms</text>
+    <text x="400" y="55" fill="#34d399" font-family="sans-serif" font-size="12">ultra-lightweight</text>
+  </g>
+  <rect x="30" y="290" width="540" height="35" rx="6" fill="#022c22" stroke="#047857" />
+  <text x="45" y="312" fill="#6ee7b7" font-family="monospace" font-size="11">&gt; PyAutomate is running in background. Press Ctrl+C to stop.</text>
+</svg>

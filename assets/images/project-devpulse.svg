@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="neonPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#p1Grad)" />
+  <!-- Browser top bar -->
+  <rect width="600" height="40" rx="16" fill="#0b1120" />
+  <rect y="25" width="600" height="15" fill="#0b1120" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="20" r="5" fill="#10b981" />
+  <rect x="120" y="10" width="360" height="20" rx="6" fill="#1e293b" />
+  <text x="210" y="24" fill="#94a3b8" font-family="monospace" font-size="11">https://devpulse.codewithashok.dev</text>
+  <!-- Mockup UI: Left sidebar, feed, right widgets -->
+  <rect x="20" y="55" width="120" height="285" rx="8" fill="#111827" stroke="#1e293b" />
+  <rect x="35" y="75" width="90" height="14" rx="4" fill="#38bdf8" fill-opacity="0.3" />
+  <rect x="35" y="100" width="70" height="10" rx="3" fill="#334155" />
+  <rect x="35" y="120" width="80" height="10" rx="3" fill="#334155" />
+  <rect x="35" y="140" width="65" height="10" rx="3" fill="#334155" />
+  <rect x="35" y="160" width="75" height="10" rx="3" fill="#334155" />
+  <!-- Center Feed Post -->
+  <rect x="155" y="55" width="285" height="285" rx="8" fill="#0b1120" stroke="#1e293b" />
+  <circle cx="180" cy="80" r="14" fill="#6366f1" />
+  <rect x="205" y="73" width="90" height="10" rx="3" fill="#f8fafc" />
+  <rect x="205" y="87" width="50" height="6" rx="2" fill="#64748b" />
+  <rect x="175" y="110" width="245" height="12" rx="3" fill="#cbd5e1" />
+  <rect x="175" y="128" width="220" height="10" rx="3" fill="#94a3b8" />
+  <!-- Post Code Block -->
+  <rect x="175" y="150" width="245" height="95" rx="6" fill="#020617" stroke="#334155" />
+  <text x="185" y="172" fill="#38bdf8" font-family="monospace" font-size="11">const</text>
+  <text x="225" y="172" fill="#f8fafc" font-family="monospace" font-size="11">feed = await api.get();</text>
+  <text x="185" y="192" fill="#a855f7" font-family="monospace" font-size="11">renderDevTimeline</text>
+  <text x="310" y="192" fill="#f8fafc" font-family="monospace" font-size="11">(feed);</text>
+  <text x="185" y="212" fill="#10b981" font-family="monospace" font-size="11">// ⚡ Realtime Community Feed</text>
+  <rect x="175" y="260" width="70" height="20" rx="10" fill="#38bdf8" fill-opacity="0.15" />
+  <text x="190" y="274" fill="#38bdf8" font-family="sans-serif" font-size="10">❤️ 248 Likes</text>
+  <rect x="255" y="260" width="70" height="20" rx="10" fill="#a855f7" fill-opacity="0.15" />
+  <text x="268" y="274" fill="#c084fc" font-family="sans-serif" font-size="10">💬 42 Replies</text>
+  <!-- Right Trending Card -->
+  <rect x="455" y="55" width="125" height="285" rx="8" fill="#111827" stroke="#1e293b" />
+  <rect x="470" y="75" width="80" height="12" rx="3" fill="#f8fafc" fill-opacity="0.8" />
+  <rect x="470" y="100" width="95" height="8" rx="2" fill="#00f2fe" fill-opacity="0.6" />
+  <rect x="470" y="115" width="75" height="6" rx="2" fill="#64748b" />
+  <rect x="470" y="140" width="95" height="8" rx="2" fill="#ec4899" fill-opacity="0.6" />
+  <rect x="470" y="155" width="70" height="6" rx="2" fill="#64748b" />
+  <rect x="470" y="180" width="95" height="8" rx="2" fill="#10b981" fill-opacity="0.6" />
+  <rect x="470" y="195" width="60" height="6" rx="2" fill="#64748b" />
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1322" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="voicePulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#vmGrad)" />
+  
+  <!-- Window Top Bar -->
+  <rect width="600" height="40" rx="16" fill="#0b1120" />
+  <rect y="25" width="600" height="15" fill="#0b1120" />
+  <circle cx="25" cy="20" r="5" fill="#ef4444" />
+  <circle cx="42" cy="20" r="5" fill="#f59e0b" />
+  <circle cx="59" cy="20" r="5" fill="#10b981" />
+  <rect x="140" y="10" width="320" height="20" rx="6" fill="#1e293b" />
+  <text x="180" y="24" fill="#fbbf24" font-family="monospace" font-size="11">VidhiMitra • BolAdhikar Voice AI</text>
+
+  <!-- Left: Citizen Legal Query Card -->
+  <rect x="25" y="55" width="280" height="280" rx="12" fill="#111827" stroke="#334155" />
+  <rect x="40" y="70" width="95" height="20" rx="10" fill="#f59e0b" fill-opacity="0.15" />
+  <text x="48" y="84" fill="#fbbf24" font-family="sans-serif" font-weight="bold" font-size="9">LEGAL-TECH AI</text>
+  
+  <text x="40" y="115" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="16">BolAdhikar (बोल अधिकार)</text>
+  <text x="40" y="135" fill="#94a3b8" font-family="sans-serif" font-size="11">Citizen Rights &amp; Legal Literacy System</text>
+
+  <!-- Voice Input Visualizer Waves -->
+  <rect x="40" y="155" width="250" height="75" rx="8" fill="#090d16" stroke="#1e293b" />
+  <!-- Sound Wave Bars -->
+  <g transform="translate(60, 192)">
+    <rect x="0" y="-10" width="4" height="20" rx="2" fill="#00e5ff" />
+    <rect x="10" y="-18" width="4" height="36" rx="2" fill="#00e5ff" />
+    <rect x="20" y="-8" width="4" height="16" rx="2" fill="#00e5ff" />
+    <rect x="30" y="-25" width="4" height="50" rx="2" fill="#ec4899" />
+    <rect x="40" y="-12" width="4" height="24" rx="2" fill="#ec4899" />
+    <rect x="50" y="-30" width="4" height="60" rx="2" fill="#fbbf24" />
+    <rect x="60" y="-15" width="4" height="30" rx="2" fill="#fbbf24" />
+    <rect x="70" y="-22" width="4" height="44" rx="2" fill="#00e5ff" />
+    <rect x="80" y="-8" width="4" height="16" rx="2" fill="#00e5ff" />
+    <rect x="90" y="-18" width="4" height="36" rx="2" fill="#ec4899" />
+    <rect x="100" y="-5" width="4" height="10" rx="2" fill="#ec4899" />
+    <rect x="110" y="-15" width="4" height="30" rx="2" fill="#00e5ff" />
+    <rect x="120" y="-25" width="4" height="50" rx="2" fill="#00e5ff" />
+    <rect x="130" y="-10" width="4" height="20" rx="2" fill="#fbbf24" />
+  </g>
+  <text x="50" y="248" fill="#a7f3d0" font-family="monospace" font-size="10">🎙️ Listening in Hindi / English...</text>
+
+  <!-- Microphone Button -->
+  <rect x="40" y="275" width="250" height="42" rx="8" fill="#f59e0b" />
+  <circle cx="65" cy="296" r="10" fill="#ffffff" />
+  <text x="85" y="301" fill="#090d16" font-family="sans-serif" font-weight="bold" font-size="12">Tap to Speak Legal Query</text>
+
+  <!-- Right: Legal Response Pane -->
+  <rect x="320" y="55" width="255" height="280" rx="12" fill="#0e1626" stroke="#00e5ff" stroke-width="1.2" />
+  <text x="335" y="80" fill="#00e5ff" font-family="sans-serif" font-weight="bold" font-size="13">Legal Rights Guidance</text>
+  
+  <rect x="335" y="95" width="225" height="70" rx="6" fill="#1e293b" />
+  <text x="345" y="113" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="11">Article 21: Right to Life &amp; Liberty</text>
+  <text x="345" y="130" fill="#94a3b8" font-family="sans-serif" font-size="10">Explains legal recourse, consumer</text>
+  <text x="345" y="145" fill="#94a3b8" font-family="sans-serif" font-size="10">protection and legal aid procedures.</text>
+
+  <rect x="335" y="175" width="225" height="65" rx="6" fill="#1e293b" />
+  <text x="345" y="193" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="11">Free Legal Aid (NALSA)</text>
+  <text x="345" y="210" fill="#94a3b8" font-family="sans-serif" font-size="10">How citizens can request pro-bono</text>
+  <text x="345" y="225" fill="#94a3b8" font-family="sans-serif" font-size="10">lawyer representation easily.</text>
+
+  <rect x="335" y="255" width="225" height="60" rx="6" fill="#090d16" stroke="#334155" />
+  <text x="345" y="275" fill="#34d399" font-family="monospace" font-size="10">🔊 Voice Synthesis: "आपकी सहायता के लिए"</text>
+  <text x="345" y="295" fill="#64748b" font-family="monospace" font-size="10">Multi-lingual Web Speech API Ready</text>
+</svg>
