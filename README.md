@@ -93,19 +93,19 @@ Open [http://localhost:8000](http://localhost:8000) in your browser.
 This static website can be hosted for **free** on any static hosting platform:
 
 ### 1. GitHub Pages (Free & Instant)
-1. Create a new GitHub repository named `code-with-ashok`.
+1. Repository: [`CodeWithAshokk/CodeWithAshokk`](https://github.com/CodeWithAshokk/CodeWithAshokk)
 2. Push your project files to the `main` branch:
    ```bash
    git init
    git add .
    git commit -m "Initial release of Code With Ashok portfolio"
    git branch -M main
-   git remote add origin https://github.com/CodeWithAshokk/code-with-ashok.git
+   git remote add origin https://github.com/CodeWithAshokk/CodeWithAshokk.git
    git push -u origin main
    ```
 3. Go to **Settings > Pages** on your GitHub repository.
 4. Under **Branch**, select `main` and root `/`, then click **Save**.
-5. Your site will be live at `https://<your-username>.github.io/code-with-ashok/` within 60 seconds!
+5. Your site will be live at `https://codewithashokk.github.io/CodeWithAshokk/` within 60 seconds!
 
 ### 2. Netlify / Vercel / Cloudflare Pages
 - Drag and drop the project folder directly into the Netlify Drop dashboard, or link your GitHub repository. No build command is required (`Publish directory: .`).
