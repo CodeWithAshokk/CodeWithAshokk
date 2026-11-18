@@ -1,6 +1,8 @@
-# robots.txt for Code With Ashok Portfolio
+# robots.txt for Code With Ashok (https://codewithashokk.onrender.com)
 User-agent: *
 Allow: /
+Disallow: /preview.html
+Disallow: /serve.ps1
 
-# Sitemaps
-Sitemap: https://codewithashok.dev/sitemap.xml
+# Sitemap Location
+Sitemap: https://codewithashokk.onrender.com/sitemap.xml
